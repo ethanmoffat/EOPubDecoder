@@ -1,0 +1,154 @@
+/**
+EO Data Resource ~ Ethan Moffat
+-- styles.css --
+Release as part of the EO Data resource
+V 0.1.0, 04-17-2011
+**/
+body
+{
+background-color:#000000;
+font-family:Consolas;
+color: #FFFFFF;
+}
+
+#topmenu
+{
+position:absolute;
+top:5px;
+left:5px;
+background-color:#AAAAAA;
+border:2px solid #FFFFFF;
+width:795px;
+height:50px;
+}
+
+#leftmenu
+{
+position:absolute;
+font-family:Consolas;
+background-color:#AAAAAA;
+color:#000000;
+top:65px;
+left:5px;
+width:170px;
+border:2px solid #FFFFFF;
+}
+
+#main
+{
+position:absolute;
+background-color:#AAAAAA;
+color:#000000;
+top:65px;
+left:200px;
+width:600px;
+border:2px solid #FFFFFF;
+}
+
+#credit
+{
+position:absolute;
+top:555px;
+width:170px;
+color:#FFFFFF;
+font-size:11px;
+text-align:center;
+}
+
+a:link,a:visited
+{
+color:navy;
+text-decoration:underline;
+}
+a:hover
+{
+color:white;
+text-decoration:underline;
+}
+a:active
+{
+text-decoration:underline;
+}
+.leftMenuLink
+{
+font-family:Consolas;
+background-color:#AAAAAA;
+}
+ul.leftMenuLink
+{
+list-style-type:none;
+margin:0px;
+padding:0px;
+}
+a:link.leftMenuLink, a:visited.leftMenuLink
+{
+text-decoration:none;
+display:block;
+padding:2px;
+}
+a:hover.leftMenuLink
+{
+background-color:#727272;
+}
+a:link.smallLink, a:visted.smallLink
+{
+text-size:8pt;
+text-decoration:inherit;
+display:inherit;
+padding:inherit;
+}
+a:hover.smallLink
+{
+background-color:inherit;
+}
+
+.menuBreak
+{
+width:70%;
+size:2px;
+color:#FFFFFF;
+}
+
+.mainText
+{
+margin:4px;
+font-size:10pt;
+}
+
+e
+{
+margin:0px;
+padding:0px;
+}
+
+e.titleLabel
+{
+font-size:22px;
+}
+
+table
+{
+  margin-left:auto;
+  margin-right:auto;
+  width:97%;
+  border-collapse:collapse;
+  font-size:10pt;
+}
+table,tr,td
+{
+  color:#000000;
+  border:2px solid #888888;
+  font-size:10pt;
+}
+th
+{
+  color:navy;
+  font-size:10pt;
+}
+table.nested,tr.nested,td.nested
+{
+  padding:0px;
+  border-collapse:collapse;
+  border:0px solid #888888;
+  font-size:10pt;
+}
