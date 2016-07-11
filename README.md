@@ -9,6 +9,10 @@ You will need to launch the Endless Online client and log in. This will perform 
 
 This repository is not actively being maintained and was a side project I worked on during my second year at university. 
 
+# Sample Hosted Site
+
+A sample site is available [here](http://ewmoffat.ddns.net:8080/EOPubDecoder). This site uses the default Endless Online PUB files.
+
 # Configuration
 
 The configurable options are as follows:
