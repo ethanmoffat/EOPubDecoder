@@ -13,6 +13,8 @@ This repository is not actively being maintained and was a side project I worked
 
 A sample site is available [here](http://ewmoffat.ddns.net:8080/EOPubDecoder). This site uses the default Endless Online PUB files.
 
+This site uses github webhooks to automatically update based on any changes that are committed to this repository. The site should always be in sync with the changes!
+
 # Configuration
 
 The configurable options are as follows:
