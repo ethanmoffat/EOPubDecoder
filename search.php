@@ -64,7 +64,7 @@ require("config.php");
 <?php require("menu.php");?>
 </div>
 <div id="credit">
-(c) Ethan Moffat 2011
+<?php require("copyright.php");?>
 </div>
 <div id="main">
 <div class="mainText">

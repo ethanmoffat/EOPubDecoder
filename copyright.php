@@ -1,0 +1,1 @@
+&copy; Ethan Moffat 2011-2016
