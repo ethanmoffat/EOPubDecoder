@@ -32,3 +32,9 @@ The following options set ranged attributes for the gun item in default pubs and
 `_gun_item_name` (string): The name of the gun item. Default is "gun".
 
 `_gun_item_id` (int): The item ID of the gun item. Default is 365.
+
+# DELETEME.txt files
+
+I've included a couple DELETEME.txt files so that the cache/ and pub/ directories are automatically created when cloning from git. These files don't actually do anything.
+
+You will need to ensure that the cache/ directory has read/write permissions and that the pub/ directory (and files) have read permissions in order for data to be properly displayed.
