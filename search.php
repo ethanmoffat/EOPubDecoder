@@ -278,7 +278,9 @@ elseif($_searchType == "EIF" && count($res) > 0)
     <th width="20%">Requirements</th>
   </tr>
   <?php
-    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page; $i++)
+	$arr_max = count($res);
+  
+    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page && $i < $arr_max; $i++)
     {
     $linearr = explode(", ",substr($res[$i],1,count($res[$i])-2));
     if($linearr[1] == "eof")
