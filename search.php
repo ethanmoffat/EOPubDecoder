@@ -92,6 +92,8 @@ elseif($_searchType == "ESF")
 elseif($_searchType == "EIF")
   $res = PUBS::Search(file("cache/EIF.dat",FILE_IGNORE_NEW_LINES),$expr);
   
+$arr_max = count($res);
+
 if($_searchType == "ENF" && count($res) > 0)
 {
 ?>
@@ -107,7 +109,7 @@ if($_searchType == "ENF" && count($res) > 0)
     <th colspan="2">Stats</th>
   </tr>
   <?php
-    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page; $i++)
+    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page && $i < $arr_max; $i++)
     {
     $result = explode(", ",substr($res[$i],1,count($res[$i])-2));
     if($result[1] == "eof")
@@ -154,7 +156,7 @@ elseif($_searchType == "ESF" && count($res) > 0)
     <th colspan="2">Stats</th>
   </tr>
   <?php
-    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page; $i++)
+    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page && $i < $arr_max; $i++)
     {
     $result = explode(", ",substr($res[$i],1,count($res[$i])-2));
     print<<<eof
@@ -232,7 +234,7 @@ elseif($_searchType == "ECF" && count($res) > 0)
     <th>Stats</th>
   </tr>
   <?php
-    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page; $i++)
+    for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page && $i < $arr_max; $i++)
     {
     $result = explode(", ",substr($res[$i],1,count($res[$i])-2));
     if($result[1] == "eof")
@@ -277,9 +279,7 @@ elseif($_searchType == "EIF" && count($res) > 0)
     <th>Stats</th>
     <th width="20%">Requirements</th>
   </tr>
-  <?php
-	$arr_max = count($res);
-  
+  <?php  
     for($i = ($page - 1)*$items_per_page; $i < ($page-1) *  $items_per_page + $items_per_page && $i < $arr_max; $i++)
     {
     $linearr = explode(", ",substr($res[$i],1,count($res[$i])-2));
